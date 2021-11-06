@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
 
   <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
-
+  <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/main-rtl.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/intlTelInput.min.css" />
 
@@ -46,7 +46,7 @@
               <a class="nav-link" href="index.html"> الرئيسية </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="office.html"> المكاتب </a>
+              <a class="nav-link" href="office.html"> المكاتب العقارية </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="adlistinglist.html"> الاعلانات </a>
@@ -186,24 +186,48 @@
           <div class="register-form login-area">
             <h3>إنشاء اعلان جديد</h3>
             <form class="login-form">
-              <div class="form-group inputwithicon mb-4">
-                <label class="d-block text-bold">نوع الاعلان :</label>
-                <div class="custom-control custom-radio mb-2">
-                  <input type="radio" class="custom-control-input" id="free" name="pay" onchange="check()" />
-                  <label class="custom-control-label font-size-16" for="free">
-                    اعلان عادي </label>
+              <div class="alert alert-warning" role="alert">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group inputwithicon mb-4">
+                    <label class="d-block text-bold">نوع الباقة :</label>
+                    <div class="custom-control custom-radio mb-2">
+                      <input type="radio" class="custom-control-input" id="free" name="pay" onchange="check()" />
+                      <label class="custom-control-label font-size-16" for="free">
+                        اعلان عادي </label>
+                    </div>
+                    <div class="custom-control custom-radio mb-2">
+                      <input type="radio" class="custom-control-input" id="premium" name="pay" value="number"
+                        onchange="check()" />
+                      <label class="custom-control-label font-size-16" for="premium">
+                        اعلان مميز</label>
+                    </div>
+                  </div>
                 </div>
-                <div class="custom-control custom-radio mb-2">
-                  <input type="radio" class="custom-control-input" id="premium" name="pay" value="number"
-                    onchange="check()" />
-                  <label class="custom-control-label font-size-16" for="premium">
-                    اعلان مدفوع</label>
+                <div class="col-12 col-md-6">
+                  <div class="form-group inputwithicon mb-4">
+                    <label class="d-block text-bold">نوع الاعلان :</label>
+                    <div class="custom-control custom-radio mb-2">
+                      <input type="radio" class="custom-control-input" id="rent" name="type" />
+                      <label class="custom-control-label font-size-16" for="rent">
+                        ايجار </label>
+                    </div>
+                    <div class="custom-control custom-radio mb-2">
+                      <input type="radio" class="custom-control-input" id="pay" name="type" />
+                      <label class="custom-control-label font-size-16" for="pay">
+                        بيع </label>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+
               <div class="form-group d-none" id="upload-reset">
                 <label class="form-control upload d-flex align-items-center mb-0" for="tg-photogallery">
                   <div class="placeholder d-flex justify-content-between w-100">
-                    <span class="font-size-18">ايصال الدفع *</span>
+                    <span class="font-size-18">ايصال الدفع</span>
                     <i class="fa fa-upload text-primary"></i>
                   </div>
                   <input id="tg-photogallery" class="tg-fileinput" type="file" name="file" />
@@ -217,67 +241,101 @@
               <div class="form-group mb-4 inputwithicon">
                 <div class="select">
                   <select class="form-control">
-                    <option value="none">الصنف*</option>
-                    <option value="none">الصنف</option>
+                    <option value="none">التصنيف</option>
+                    <option value="none">بيت</option>
+                    <option value="none">بيت</option>
+                    <option value="none">بيت</option>
+                    <option value="none">بيت</option>
+                    <option value="none">بيت</option>
+                    <option value="none">بيت</option>
+                    <option value="none">بيت</option>
                   </select>
                 </div>
               </div>
-              <div class="form-group mb-4 inputwithicon">
-                <div class="select">
-                  <select class="form-control">
-                    <option value="none">المحافظة*</option>
-                    <option value="none">الفروانية</option>
-                    <option value="none">الفروانية</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group mb-4">
-                <div class="input-icon">
-                  <input type="text" class="form-control" placeholder="عنوان العقار*" />
-                </div>
-              </div>
-              <div class="form-group mb-4">
-                <div class="input-icon">
-                  <input type="text" class="form-control placeholder-font-14" placeholder="السعر*" />
-                </div>
-              </div>
-              <!-- <div class="form-group inputwithicon mb-4">
-              <label class="d-block text-bold">وسيلة التواصل:</label>
-              <div class="custom-control custom-radio mb-2">
-                <input type="radio" class="custom-control-input" id="phone-number1" name="communicate"
-                  onchange="check()" />
-                <label class="custom-control-label font-size-16" for="phone-number1">
-                  اظهار رقم جوالك</label>
-              </div>
-              <div class="custom-control custom-radio mb-2">
-                <input type="radio" class="custom-control-input" id="phone-number" name="communicate" value="number"
-                  onchange="check()" />
-                <label class="custom-control-label font-size-16" for="phone-number">
-                  اضافة رقم جوال اخر</label>
-              </div>
-            </div> -->
-              <div class="row flex-nowrap " id="phone-field">
-                <div class="form-group mb-3 col-8 pl-0">
-                  <div class="input-icon">
-                    <input class="form-control text-left placeholder-right" placeholder="رقم الجوال" type="tel" />
+              <div class="row">
+                <div class="form-group mb-4 inputwithicon col-12 col-md-6">
+                  <div class="select">
+                    <select class="form-control">
+                      <option value="none">المحافظة</option>
+                      <option value="none">الفروانية</option>
+                      <option value="none">الفروانية</option>
+                    </select>
                   </div>
                 </div>
-                <div class="form-group mb-3 col-4">
-                  <div class="input-icon phone-number">
-                    <i class="fa fa-plus text-grey"></i>
-                    <input class="form-control" type="tel" value="967" />
+                <div class="form-group mb-4 inputwithicon col-12 col-md-6">
+                  <div class="select">
+                    <select class="form-control">
+                      <option value="none">المدينة</option>
+                      <option value="none">المدينة</option>
+                      <option value="none">المدينة</option>
+                    </select>
                   </div>
                 </div>
               </div>
+
               <div class="form-group mb-4">
                 <div class="input-icon">
-                  <textarea type="password" class="form-control" placeholder="وصف العقار*"></textarea>
+                  <input type="text" class="form-control" placeholder="عنوان العقار" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-4">
+                    <div class="input-icon">
+                      <input type="text" class="form-control placeholder-font-14" placeholder="السعر" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-4">
+                    <div class="input-icon">
+                      <input type="number" class="form-control placeholder-font-14" placeholder="الدور" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="row flex-nowrap " id="phone-field">
+                    <div class="form-group mb-3 col-8 pl-0">
+                      <div class="input-icon">
+                        <input class="form-control text-left placeholder-right" placeholder="رقم الجوال" type="tel" />
+                      </div>
+                    </div>
+                    <div class="form-group mb-3 col-4">
+                      <div class="input-icon phone-number">
+                        <i class="fa fa-plus text-grey"></i>
+                        <input class="form-control" type="tel" value="967" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <select class="js-example-basic-multiple form-control" name="features[]" multiple="multiple">
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                      <option value="AL">خاصية 1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group mb-4">
+                <div class="input-icon">
+                  <textarea type="password" class="form-control" placeholder="وصف العقار"></textarea>
                 </div>
               </div>
 
               <label class="form-control upload d-flex align-items-center" for="tg-photogallery">
                 <div class="placeholder d-flex justify-content-between w-100">
-                  <span class="font-size-18">صور العقار*</span>
+                  <span class="font-size-18">صور العقار</span>
                   <i class="fa fa-upload text-primary"></i>
                 </div>
 
@@ -342,13 +400,13 @@
               </div>
               <ul class="mt-3 footer-social">
                 <li>
-                  <a class="google-plus" href="#"><i class="fa fa fa-instagram"></i></a>
+                  <a class="instagram" href="#"><i class="fa fa fa-instagram"></i></a>
                 </li>
                 <li>
                   <a class="google-plus" href="#"><i class="fa fa fa-google-plus"></i></a>
                 </li>
                 <li>
-                  <a class="google-plus" href="#"><i class="fa fa fa-pinterest"></i></a>
+                  <a class="pinterest" href="#"><i class="fa fa fa-pinterest"></i></a>
                 </li>
                 <li>
                   <a class="facebook" href="#"><i class="fa fa-facebook-f"></i></a>
@@ -446,6 +504,7 @@
       }
     };
   </script>
+  <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="assets/js/jquery-min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
@@ -455,7 +514,9 @@
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/jquery.slicknav.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/jquery-asRange.min.js"></script>
+  <script src="assets/js/main-rtl.js"></script>
   <script src="assets/js/form-validator.min.js"></script>
   <script src="assets/js/contact-form-script.min.js"></script>
   <script src="assets/js/summernote.js"></script>
