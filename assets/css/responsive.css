@@ -954,4 +954,7 @@
   .post-btn {
     display: none !important;
   }
+  .inputwithicon .custom-control-label {
+    color: #fff !important;
+  }
 }
