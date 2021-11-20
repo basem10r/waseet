@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>ads</title>
+  <title>Kwaseet</title>
 
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-rtl.css" />
@@ -28,7 +28,7 @@
 
 <body>
   <header id="header-wrap">
-    <nav class="navbar navbar-expand-lg bg-white fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg bg-white   scrolling-navbar">
       <div class="container">
         <div class="navbar-header d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
@@ -214,15 +214,15 @@
     </nav>
   </header>
 
-  <div class="page-header " style="background: url(assets/img/banner1.jpg)">
+  <div class="page-header " style="background: url(assets/img/hero-area.jpg)">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="breadcrumb-wrapper">
-            <h2 class="product-title">تبليغ</h2>
+            <h2 class="product-title">تحديث الاعلان</h2>
             <ol class="breadcrumb">
-              <li><a href="#">الرئيسية/</a></li>
-              <li class="current">تبليغ</li>
+              <li><a href="index.html">الرئيسية/</a></li>
+              <li class="current">تحديث الاعلان</li>
             </ol>
           </div>
         </div>
@@ -230,19 +230,130 @@
     </div>
   </div>
 
-  <div id="content" class="section-padding mt-5">
+  <div id="content" class="my-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-5 col-md-12 col-xs-12">
+        <div class="col-lg-7 col-md-12 col-xs-12">
           <div class="register-form login-area">
-            <h3>تبليغ عن مخالفة</h3>
+            <h3>تعديل الاعلان</h3>
             <form class="login-form">
               <div class="form-group mb-4 inputwithicon">
-                <textarea class="form-control" placeholder="اذكر المخالفة"></textarea>
+                <div class="select">
+                  <select class="form-control">
+                    <option value="none">القسم*</option>
+                    <option value="none">القسم</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group mb-4 inputwithicon">
+                <div class="select">
+                  <select class="form-control">
+                    <option value="none">الصنف*</option>
+                    <option value="none">الصنف</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group mb-4 inputwithicon">
+                <div class="select">
+                  <select class="form-control">
+                    <option value="none">المدينة*</option>
+                    <option value="none">المدينة</option>
+                    <option value="none">المدينة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <div class="input-icon">
+                  <input type="text" class="form-control placeholder-font-14"
+                    placeholder="المنطقة او المديرية (يمكن تركه فارغا) " />
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <div class="input-icon">
+                  <input type="text" class="form-control" placeholder="عنوان الاعلان*" />
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <div class="input-icon">
+                  <input type="text" class="form-control placeholder-font-14" placeholder="السعر (يمكن تركه فارغا)" />
+                </div>
+              </div>
+              <div class="form-group inputwithicon mb-4">
+                <label class="d-block text-bold">وسيلة التواصل:</label>
+                <div class="custom-control custom-radio mb-2">
+                  <input type="radio" class="custom-control-input" id="phone-number1" name="communicate"
+                    onchange="check()" />
+                  <label class="custom-control-label font-size-16" for="phone-number1">
+                    اظهار رقم جوالك</label>
+                </div>
+                <div class="custom-control custom-radio mb-2">
+                  <input type="radio" class="custom-control-input" id="phone-number" name="communicate" value="number"
+                    onchange="check()" />
+                  <label class="custom-control-label font-size-16" for="phone-number">
+                    اضافة رقم جوال اخر</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" name="communicate1" class="custom-control-input" id="message" value="no-number"
+                    onchange="check()" disabled checked />
+                  <label class="custom-control-label font-size-16" for="message">التواصل عبر الرسائل الخاصة داخل
+                    الموقع</label>
+                </div>
+              </div>
+              <div id="phone-field" class="form-group mb-4 d-none">
+                <div class="input-icon">
+                  <input type="tel" class="form-control" placeholder="رقم الجوال" />
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <div class="input-icon">
+                  <textarea type="password" class="form-control" placeholder="وصف الاعلان*"></textarea>
+                </div>
+              </div>
+
+              <label class="form-control upload d-flex align-items-center" for="tg-photogallery">
+                <div class="placeholder d-flex justify-content-between w-100">
+                  <span class="font-size-18">صور الاعلان*</span>
+                  <i class="fa fa-upload text-primary"></i>
+                </div>
+
+                <input id="tg-photogallery" class="tg-fileinput" type="file" name="file" />
+              </label>
+              <div class="uploaded-images d-flex my-3 flex-wrap">
+                <div class="img-container">
+                  <div class="img-cancel">
+                    <i class="fa fa-times"></i>
+                  </div>
+                  <img src="assets/img/product/img1.jpg" />
+                </div>
+                <div class="img-container">
+                  <div class="img-cancel">
+                    <i class="fa fa-times"></i>
+                  </div>
+                  <img src="assets/img/product/img2.jpg" />
+                </div>
+                <div class="img-container">
+                  <div class="img-cancel">
+                    <i class="fa fa-times"></i>
+                  </div>
+                  <img src="assets/img/product/img3.jpg" />
+                </div>
+                <div class="img-container">
+                  <div class="img-cancel">
+                    <i class="fa fa-times"></i>
+                  </div>
+                  <img src="assets/img/product/img4.jpg" />
+                </div>
+              </div>
+              <div class="form-group mb-4 inputwithicon">
+                <div class="select">
+                  <select class="form-control">
+                    <option value="none">الصورة الرئيسية</option>
+                  </select>
+                </div>
               </div>
               <div class="text-center mt-5">
-                <a href="dashboard.html" class="btn btn-common log-btn btn-block">
-                  تبليغ
+                <a href="ads-details.html" class="btn btn-common log-btn btn-block">
+                  إنشاء الاعلان
                 </a>
               </div>
             </form>
@@ -346,10 +457,7 @@
     </div>
   </footer>
   <div class="add-ads">
-    <div class="d-flex align-items-center">
-      <a href="post-ads.html" class="btn btn-common btn-block m-0"><i class="fa fa-plus mx-2"></i>انشر اعلانك</a>
-      <a href="login.html" class="btn btn-border btn-block m-0 mr-2"><i class="fa fa-user mx-2"></i> تسجيل الدخول</a>
-    </div>
+    <a href="post-ads.html" class="btn btn-common btn-block m-0"><i class="fa fa-plus mx-2"></i>انشر اعلانك</a>
   </div>
 
   <div id="preloader">

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>ads</title>
+  <title>Kwaseet</title>
 
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-rtl.css" />
@@ -26,7 +26,31 @@
 
 <body>
   <header id="header-wrap">
-    <nav class="navbar navbar-expand-lg bg-white fixed-top scrolling-navbar">
+    <div class="top-bar">
+      <div class="container">
+        <div class="row d-flex align-items-center ">
+          <div class="col-lg-7 col-md-5 col-12 mobile-hidden">
+            <ul class="list-inline">
+              <li><a class="text-white" href="https://chatwith.io/s/5f33ce0c4aede"><i class="fa fa-whatsapp"></i> +0123
+                  456 789</a></li>
+              <li>
+                |
+              </li>
+              <li class="mobile-hidden">
+                <p>مرحبًا بك في Kwaseet</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-7 col-12">
+            <div class="header-top-right float-right">
+              <a href="login.html" class="header-top-button"><i class="fa fa-lock"></i> تسجيل الدخول</a> |
+              <a href="register.html" class="header-top-button"><i class="fa fa-user"></i> إنشاء حساب</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white   scrolling-navbar">
       <div class="container">
         <div class="navbar-header d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
@@ -44,19 +68,28 @@
               <a class="nav-link" href="index.html"> الرئيسية </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="about.html"> نبذة عنا </a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <div class="dropdown language mx-0 mx-md-3">
+                <button class="btn p-0 btn-secondary bg-transparent border-0 dropdown-toggle text-dark" type="button"
+                  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  الاعلانات
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item text-bold" href="adlistinglist.html">بيع</a>
+                  <a class="dropdown-item text-bold" href="adlistinglist.html">إيجار</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="office.html"> المكاتب العقارية </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="adlistinglist.html"> الاعلانات </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="register.html"> تسجيل </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html"> دخول </a>
+              <a class="nav-link" href="blogs.html"> الاخبار العقارية </a>
             </li>
             <li class="nav-item d-flex align-items-center">
-              <div class="dropdown language mx-3 mobile-hidden">
+              <div class="dropdown language mx-0 mx-md-3 ">
                 <button class="btn p-0 btn-secondary bg-transparent border-0 dropdown-toggle text-dark" type="button"
                   id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   المحافظة
@@ -74,36 +107,6 @@
             </li>
           </ul>
           <div class="post-btn d-flex align-items-center">
-            <!-- <div class="dropdown profile mx-3 mobile-hidden">
-                <button
-                  class="btn p-0 btn-secondary bg-transparent border-0 dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <img src="assets/img/testimonial/img1.png" />
-                </button>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item text-bold" href="dashboard.html"
-                    >الصفحة الشخصية</a
-                  >
-                  <a class="dropdown-item color-danger" href="login.html"
-                    >تسجيل الخروج</a
-                  >
-                </div>
-              </div>
-              <div class="notification mobile-hidden ml-3">
-                <a href="#"
-                  ><div class="icon">
-                    <div class="circle">1</div>
-                    <i class="fa fa-bell"></i>
-                  </div>
-                </a>
-              </div> -->
-
             <div class="dropdown language mx-3 mobile-hidden">
               <button class="btn p-0 btn-secondary bg-transparent border-0 dropdown-toggle text-dark" type="button"
                 id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -118,6 +121,17 @@
             </div>
             <a class="btn btn-common mx-2 text-white" href="post-ads.html"><i class="lni-pencil-alt"></i> انشر
               إعلانا</a>
+            <div class="dropdown profile mx-3 mobile-hidden">
+              <button class="btn p-0 btn-secondary bg-transparent border-0 dropdown-toggle" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/img/testimonial/img1.png" />
+              </button>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item text-bold" href="dashboard.html">الصفحة الشخصية</a>
+                <a class="dropdown-item color-danger" href="login.html">تسجيل الخروج</a>
+              </div>
+            </div>
             <!-- <a class="btn btn-common mx-2 text-white font-size-14" href="register.html"><i class="lni-user"></i> انشاء
               حساب</a>
             <a href="login.html" class="btn btn-common bg-green font-size-14"><i class="lni-lock"></i> تسجيل الدخول</a> -->
@@ -148,14 +162,14 @@
       <div class="container">
         <div class="d-flex justify-content-start justify-content-md-between flex-column flex-md-row">
           <h3 class="page-sub-title">25 مكتب</h3>
-          <div class="widget_search position-relative">
-            <form role="search" id="search-form">
-              <input type="search" class="form-control" autocomplete="off" name="s" placeholder="ابحث   "
-                id="search-input" value="">
-              <button type="submit" id="search-submit" class="search-btn">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
+          <div class="position-relative">
+            <div class="widget_search">
+              <form role="search" id="search-form">
+                <input type="search" class="form-control" autocomplete="off" name="s" placeholder="بحث..."
+                  id="search-input" value="">
+                <button type="submit" id="search-submit" class="search-btn"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -166,11 +180,8 @@
                   <img src="assets/img/featured/img-1.jpg">
                 </div>
                 <h3>مكتب 1</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -181,11 +192,8 @@
                   <img src="assets/img/featured/img-2.jpg">
                 </div>
                 <h3>مكتب 2</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -196,11 +204,8 @@
                   <img src="assets/img/featured/img-3.jpg">
                 </div>
                 <h3>مكتب 3</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -211,11 +216,8 @@
                   <img src="assets/img/featured/img-4.jpg">
                 </div>
                 <h3>مكتب 4</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -226,11 +228,8 @@
                   <img src="assets/img/featured/img-5.jpg">
                 </div>
                 <h3>مكتب 5</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -241,11 +240,8 @@
                   <img src="assets/img/featured/img-1.jpg">
                 </div>
                 <h3>مكتب 6</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -256,11 +252,8 @@
                   <img src="assets/img/featured/img-1.jpg">
                 </div>
                 <h3>مكتب 1</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -271,11 +264,8 @@
                   <img src="assets/img/featured/img-2.jpg">
                 </div>
                 <h3>مكتب 2</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -286,11 +276,8 @@
                   <img src="assets/img/featured/img-3.jpg">
                 </div>
                 <h3>مكتب 3</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -301,11 +288,8 @@
                   <img src="assets/img/featured/img-4.jpg">
                 </div>
                 <h3>مكتب 4</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -316,11 +300,8 @@
                   <img src="assets/img/featured/img-5.jpg">
                 </div>
                 <h3>مكتب 5</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -331,11 +312,8 @@
                   <img src="assets/img/featured/img-1.jpg">
                 </div>
                 <h3>مكتب 6</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -346,11 +324,8 @@
                   <img src="assets/img/featured/img-1.jpg">
                 </div>
                 <h3>مكتب 1</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -361,11 +336,8 @@
                   <img src="assets/img/featured/img-2.jpg">
                 </div>
                 <h3>مكتب 2</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -376,11 +348,8 @@
                   <img src="assets/img/featured/img-3.jpg">
                 </div>
                 <h3>مكتب 3</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -391,11 +360,8 @@
                   <img src="assets/img/featured/img-4.jpg">
                 </div>
                 <h3>مكتب 4</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -406,11 +372,8 @@
                   <img src="assets/img/featured/img-5.jpg">
                 </div>
                 <h3>مكتب 5</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -421,11 +384,8 @@
                   <img src="assets/img/featured/img-1.jpg">
                 </div>
                 <h3>مكتب 6</h3>
-                <div class="icons">
-                  <div class="icon"><i class="fa fa-envelope"></i></div>
-                  <div class="icon"><i class="fa fa-instagram"></i></div>
-                  <div class="icon"><i class="fa fa-twitter"></i></div>
-                </div>
+                <a class="text-white btn btn-whatsapp mt-2" href="https://chatwith.io/s/5f33ce0c4aede"><i
+                    class="fa fa-whatsapp"></i> تواصل</a>
               </div>
             </a>
           </div>
@@ -526,15 +486,7 @@
   </footer>
 
   <div class="add-ads">
-    <div class="d-flex align-items-center row">
-      <div class="col-6 pl-1">
-        <a href="login.html" class="btn btn-border px-0 btn-block m-0"><i class="fa fa-user mx-2"></i> تسجيل الدخول</a>
-      </div>
-
-      <div class="col-6 pr-1">
-        <a href="post-ads.html" class="btn btn-common btn-block m-0"><i class="fa fa-plus mx-2"></i>انشر اعلانك</a>
-      </div>
-    </div>
+    <a href="post-ads.html" class="btn btn-common btn-block m-0"><i class="fa fa-plus mx-2"></i>انشر اعلانك</a>
   </div>
   <div id="preloader">
     <div class="loader" id="loader-1"></div>

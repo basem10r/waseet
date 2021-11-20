@@ -141,7 +141,6 @@
         </div>
       </div>
     </nav>
-
   </header>
 
   <div class="page-header " style="background: url(assets/img/hero-area.jpg)">
@@ -149,11 +148,12 @@
       <div class="row">
         <div class="col-md-12">
           <div class="breadcrumb-wrapper">
-            <h2 class="product-title">إنشاء حساب</h2>
+            <h2 class="product-title">تفعيل الحساب</h2>
             <ol class="breadcrumb">
               <li><a href="index.html">الرئيسية /</a></li>
-              <li><a href="register.html"> إنشاء حساب/</a></li>
-              <li class="current">إنشاء حساب</li>
+              <li><a href="login.html">تسجيل الدخول /</a></li>
+              <li><a href="register.html">انشاء حساب /</a></li>
+              <li class="current">تفعيل الحساب</li>
             </ol>
           </div>
         </div>
@@ -164,150 +164,78 @@
   <section class="register my-5">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-7 col-md-12 col-xs-12">
+        <div class="col-lg-5 col-md-12 col-xs-12">
           <div class="register-form login-area">
-            <h3>إنشاء حساب</h3>
-            <ul class="nav nav-tabs nav-pills d-flex justify-content-center mt-3 border-0" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" data-toggle="tab" href="#single">مستخدم</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" data-toggle="tab" href="#office">مكتب</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="single" role="tabpanel" aria-labelledby="single-tab">
-                <form class="login-form">
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <i class="fa fa-userr"></i>
-                      <input type="text" id="Name" class="form-control" name="email" placeholder="اسم المستخدم" />
-                    </div>
+            <h3>تفعيل الحساب</h3>
+            <form class="login-form">
+              <p class="text-center mb-4 font-size-18">
+                لقد تم ارسال رسالة نصية برمز التاكيد الي رقمك
+                <span class="text-primary">+012 345 6987</span>
+              </p>
+              <div class="form-group mb-4">
+                <div class="input-icon col-12">
+                  <div class="input-group">
+                    <input class="activation-code-input w-100" placeholder="رقم التاكيد" />
                   </div>
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <i class="fa fa-userr"></i>
-                      <input type="email" id="Name" class="form-control" name="email" placeholder="البريد الالكتروني" />
-                    </div>
-                  </div>
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <input type="password" class="form-control" placeholder="كلمة المرور" />
-                    </div>
-                  </div>
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <input type="password" class="form-control" placeholder="تاكيد كلمة المرور " />
-                    </div>
-                  </div>
-                  <div class="form-group mb-4">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="checkedall" />
-                      <label class="custom-control-label text-bold" for="checkedall">
-                        اوافق علي <a href="#" class="text-primary">الشروط</a> و
-                        <a href="" class="text-primary">احكام الاستخدام</a></label>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <a href="confirm.html" class="btn btn-common bg-yellow log-btn btn-block font-size-14">
-                      إنشاء الحساب</a>
-                  </div>
-                  <div class="text-center mt-4">
-                    <a href="login.html" class="text-dark font-size-16">
-                      لديك حساب ؟ <span class="text-green text-bold">اضغط هنا</span>
-                    </a>
-                  </div>
-                </form>
+                </div>
               </div>
-              <div class="tab-pane fade" id="office" role="tabpanel" aria-labelledby="office-tab">
-                <form class="login-form">
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <i class="fa fa-userr"></i>
-                      <input type="text" id="Name" class="form-control" name="email" placeholder="اسم المكتب" />
-                    </div>
-                  </div>
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <i class="fa fa-userr"></i>
-                      <input type="email" id="Name" class="form-control" name="email" placeholder="البريد الالكتروني" />
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-control upload d-flex align-items-center mb-0" for="tg-photogallery">
-                      <div class="placeholder d-flex justify-content-between w-100">
-                        <span class="font-size-18">الملف التعريفي للمكتب</span>
-                        <i class="fa fa-upload text-primary"></i>
-                      </div>
-                      <input id="tg-photogallery" class="tg-fileinput" type="file" name="file">
-                    </label>
-                  </div>
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <input type="password" class="form-control" placeholder="كلمة المرور" />
-                    </div>
-                  </div>
-                  <div class="form-group mb-4">
-                    <div class="input-icon">
-                      <input type="password" class="form-control" placeholder="تاكيد كلمة المرور " />
-                    </div>
-                  </div>
-                  <div class="form-group mb-4">
-                    <div class="custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="checkedall" />
-                      <label class="custom-control-label text-bold" for="checkedall">
-                        اوافق علي <a href="#" class="text-primary">الشروط</a> و
-                        <a href="" class="text-primary">احكام الاستخدام</a></label>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <a href="confirm.html" class="btn btn-common bg-yellow log-btn btn-block font-size-14">
-                      إنشاء الحساب</a>
-                  </div>
-                  <div class="text-center mt-4">
-                    <a href="login.html" class="text-dark font-size-16">
-                      لديك حساب ؟ <span class="text-green text-bold">اضغط هنا</span>
-                    </a>
-                  </div>
-                </form>
+              <div class="button mb-5">
+                <div class="text-center">
+                  <a href="confirm.html" class="btn btn-common btn-block">
+                    تفعيل</a>
+                </div>
               </div>
-            </div>
-
+              <hr />
+              <div class="text-center mt-3">
+                <p class="text-bold">
+                  لتصفح اسرع حمل تطبيقتنا للاندرويد و الايفون
+                </p>
+                <div class="buttons d-flex justify-content-center mt-3">
+                  <a href=""><img src="assets/img/google.png" /></a>
+                  <a href=""><img src="assets/img/apple.png" /></a>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
   <footer>
-    <section class="footer-Content bg-light">
+    <section class="footer-Content">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-xs-6 col-mb-12">
             <div class="widget">
-              <div class="footer-logo"><img src="assets/img/logo.png"></div>
+              <div class="footer-logo">اسم الموقع</div>
               <div class="textwidget">
                 <p>
                   هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم
                   توليد هذا النص من مولد النص العربى،
                 </p>
               </div>
+              <div class="text-center my-3">
+                <p class="font-size-14 text-right">
+                  لتصفح اسرع حمل تطبيقتنا للاندرويد و الايفون
+                </p>
+                <div class="buttons d-flex justify-content-start mt-3">
+                  <a href=""><img src="assets/img/google.png" /></a>
+                  <a href=""><img src="assets/img/apple.png" /></a>
+                </div>
+              </div>
               <ul class="mt-3 footer-social">
-                <li>
-                  <a class="instagram" href="#"><i class="fa fa fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a class="google-plus" href="#"><i class="fa fa fa-google-plus"></i></a>
-                </li>
-                <li>
-                  <a class="pinterest" href="#"><i class="fa fa fa-pinterest"></i></a>
-                </li>
                 <li>
                   <a class="facebook" href="#"><i class="fa fa-facebook-f"></i></a>
                 </li>
                 <li>
                   <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a class="google-plus" href="#"><i class="fa fa fa-google-plus"></i></a>
                 </li>
               </ul>
             </div>
@@ -316,16 +244,14 @@
             <div class="widget">
               <h3 class="block-title">الروابط</h3>
               <ul class="menu">
-                <li><a href="about.html">من نحن ؟</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-                <li><a href="about.html">- صفحة</a></li>
-                <li><a href="about.html">- صفحة</a></li>
-                <li><a href="about.html">- صفحة</a></li>
-                <li><a href="about.html">- صفحة</a></li>
-                <li><a href="about.html">- صفحة</a></li>
-                <li><a href="about.html">- صفحة</a></li>
-
-
+                <li><a href="about.html">- من نحن</a></li>
+                <li><a href="office.html">- التصنيفات</a></li>
+                <li><a href="adlistinglist.html">- إعلانات </a></li>
+                <li><a href="contact.html">- اتصل بنا</a></li>
+                <li><a href="#">- التعليمات</a></li>
+                <li><a href="#">- شروط الاستخدام</a></li>
+                <li><a href="#">- سياسة الخصوصية</a></li>
+                <li><a href="report.html">- إبلاغ</a></li>
               </ul>
             </div>
           </div>
@@ -346,8 +272,8 @@
                       data-cfemail="d8abada8a8b7aaac98b5b9b1b4f6bbb7b5">[email&#160;protected]</a></span>
                 </li>
                 <li>
-                  <strong><i class="fa fa-map-marker"></i></strong><span><a href="#">المدينة <br /> الكويت
-                    </a></span>
+                  <strong><i class="fa fa-map-marker"></i></strong><span><a href="#">المدينة <br />المملكة العربية
+                      السعودية</a></span>
                 </li>
               </ul>
             </div>
@@ -388,12 +314,14 @@
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="assets/js/jquery.slicknav.js"></script>
-  <script src="assets/js/select2.min.js"></script>
-  <script src="assets/js/jquery-asRange.min.js"></script>
-  <script src="assets/js/main-rtl.js"></script>
+
   <script src="assets/js/form-validator.min.js"></script>
   <script src="assets/js/contact-form-script.min.js"></script>
   <script src="assets/js/summernote.js"></script>
+  <script src="assets/js/intlTelInput-jquery.min.js"></script>
+  <script src="assets/js/intlTelInput.min.js"></script>
+  <script src="assets/js/verification.js"></script>
+  <script src="assets/js/main-rtl.js"></script>
 </body>
 
 </html>

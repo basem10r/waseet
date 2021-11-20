@@ -218,10 +218,10 @@ ol li {
   padding: 7px 20px;
 }
 .btn-border.category {
-  background: #c2ead9;
+  background: #fff;
   border: 0;
   color: #000 !important;
-  font-weight: bold;
+  font-weight: 400;
 }
 .btn-border.category:hover i {
   color: #fff;
@@ -232,7 +232,7 @@ ol li {
 }
 
 .btn-border.category i {
-  color: #2a2a86;
+  color: #47bea3;
 }
 #owl-demo2 .owl-stage {
   display: flex;
@@ -387,10 +387,10 @@ a.back-to-top:focus {
 }
 
 .section-padding {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .page-header {
-  padding: 150px 0 50px;
+  padding: 50px 0 50px;
   position: relative;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -452,25 +452,25 @@ a.back-to-top:focus {
   animation-name: fadeIn;
 }
 .top-bar {
-  background: #16233e;
+  background: #2a2a86;
 }
 .top-bar .list-inline li {
   display: inline-block;
   line-height: 42px;
   color: #fff;
-  margin-left: 15px;
+  margin-right: 15px;
   font-size: 14px;
 }
 .top-bar .list-inline li a {
   display: block;
-  margin-right: 15px;
+  margin-left: 15px;
   color: #fff;
   line-height: 32px;
 }
 .top-bar .list-inline li i {
   font-size: 14px;
   color: #fff;
-  padding-right: 5px;
+  padding-left: 5px;
   vertical-align: middle;
 }
 .roof-social a {
@@ -525,7 +525,7 @@ a.back-to-top:focus {
   transition: all 0.3s ease-out 0s;
 }
 .header-top-right .header-top-button:hover {
-  color: #2a2a86;
+  color: #47bea3;
 }
 .sticky.is-sticky {
   position: fixed;
@@ -557,12 +557,12 @@ a.back-to-top:focus {
   color: #16233e !important;
   font-weight: bold;
 }
-.fixed-top {
-  top: 0px;
-}
+
 .top-nav-collapse {
   background: #fff;
   z-index: 999999;
+  position: fixed;
+  width: 100%;
   top: 0 !important;
   min-height: 40px;
   box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
@@ -590,9 +590,9 @@ a.back-to-top:focus {
   background: 0 0;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
-  padding: 0 17px;
+  padding: 0 10px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 4px;
@@ -1451,8 +1451,9 @@ a.back-to-top:focus {
   line-height: 46px;
 }
 .widget_search .search-btn {
-  right: 5px !important;
+  left: 5px !important;
   top: 3px !important;
+  right: 5px !important;
 }
 .featured-box .feature-content .meta-tag {
   display: inline-block;
@@ -2723,7 +2724,7 @@ button.mfp-close {
   width: 100%;
   padding: 15px 10px;
   position: relative;
-  background: #fbf4d7;
+  background: #f8f8f8;
   border-radius: 5px;
   box-shadow: none;
 }
@@ -2905,7 +2906,7 @@ button.mfp-close {
 }
 .dashboard-box .dashbord-title {
   margin: 0;
-  float: left;
+  float: right;
   color: #363b4d;
   font-size: 20px;
   font-weight: 500;
@@ -3105,7 +3106,7 @@ label {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  text-align: left;
+  text-align: right;
   padding: 15px 10px;
   background: 0 0;
   vertical-align: middle;
@@ -3117,9 +3118,9 @@ label {
   height: 20px;
 }
 .dashboardtable tbody tr td,
-.dashboardtable tbody tr td h3 {
+.dashboardtable tbody tr td p {
   color: #16233e;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   vertical-align: middle;
@@ -3523,7 +3524,7 @@ label {
 }
 .testimonial {
   background: #fff;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .testimonial.main .owl-stage-outer {
@@ -3696,6 +3697,8 @@ label {
 .blog-post {
   margin-bottom: 30px;
   box-shadow: 0 0 10px rgba(175, 175, 175, 0.23);
+  border-radius: 4px;
+  overflow: hidden;
 }
 .blog-post .post-content {
   padding: 30px;
@@ -3717,7 +3720,11 @@ label {
 }
 .blog-post .meta .meta-part {
   display: inline-block;
-  margin-right: 10px;
+  margin-left: 10px;
+}
+.blog-post .meta .meta-part i {
+  margin-left: 5px;
+  color: #47bea3;
 }
 .blog-post .meta .meta-part a {
   color: #6e6e6e;
@@ -4015,7 +4022,7 @@ blockquote {
 }
 .search-btn i {
   color: #6e6e6e;
-  right: 10px;
+  left: 10px;
 }
 #sidebar {
   margin-bottom: 60px;
@@ -4067,7 +4074,7 @@ blockquote {
   padding-bottom: 12px;
 }
 #sidebar .posts-list .widget-thumb {
-  float: left;
+  float: right;
 }
 #sidebar .posts-list .widget-thumb a {
   display: block;
@@ -4075,7 +4082,7 @@ blockquote {
 #sidebar .posts-list .widget-thumb a img {
   opacity: 1;
   max-width: 90px;
-  margin: 5px 15px 0 0;
+  margin: 5px 0 0 15px;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5461,6 +5468,9 @@ button.mfp-arrow {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.text-truncate.text-truncate-100 {
+  width: 100px;
+}
 .badge {
   font-size: 12px;
 }
@@ -5701,6 +5711,9 @@ button.mfp-arrow {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+.wrapper.dashboard {
+  max-width: unset;
+}
 .wrapper .plan {
   margin: 0;
   width: 300px;
@@ -5755,6 +5768,7 @@ button.mfp-arrow {
   border-right: 5px solid #47bea3;
   margin: 2px 20px;
   color: #484848;
+  margin-right: 0;
 }
 .wrapper .plan-features li.danger {
   border-right: 5px solid #dc3545;
@@ -5866,4 +5880,41 @@ button.mfp-arrow {
 .asRange .asRange-selected,
 .asRange .asRange-pointer:before {
   background: #47bea3;
+}
+
+.dashboard-btns .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  background: #fff;
+  box-shadow: none;
+}
+.dashboard-btns .btn.btn-green {
+  border: 1px solid #47bea3;
+  color: #47bea3 !important;
+}
+.dashboard-btns .btn.btn-common {
+  border: 1px solid #2a2a86;
+  color: #2a2a86 !important;
+}
+.dashboard-btns .btn.btn-danger {
+  border: 1px solid #dc3545;
+  color: #dc3545 !important;
+}
+.dashboard-btns .btn:hover {
+  box-shadow: none;
+}
+
+.featured-box.dashboard .figure {
+  height: auto;
+}
+
+.btn.btn-green {
+  background: #47bea3 !important;
+}
+.btn.btn-yellow {
+  background: #ffc107 !important;
+}
+.btn-whatsapp {
+  border: 1px solid #28ac00;
+  color: #28ac00 !important;
 }
