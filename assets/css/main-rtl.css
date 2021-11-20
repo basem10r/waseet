@@ -5918,3 +5918,10 @@ button.mfp-arrow {
   border: 1px solid #28ac00;
   color: #28ac00 !important;
 }
+
+#map-canvas {
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
